@@ -1,0 +1,105 @@
+
+$primary-color: #2196F3;
+$dark-primary-color: #1976D2;
+$light-primary-color: #BBDEFB;
+$text-colr: #FFF;
+
+$success-color: #85ce61;
+$warn-color: #FFC107;
+$info-color: #607D8B;
+$error-color: #f56c6c;
+
+.btn-text-style {
+  padding: 6px 12px;
+  color: $primary-color;
+  background-color: inherit;
+  border: none;
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+.btn-text-primary {
+  @extend .btn-text-style;
+  color: $primary-color;
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+.btn-text-success {
+  @extend .btn-text-style;
+  color: $success-color;
+  &:hover {
+    color: white;
+    background-color: $success-color;
+  }
+}
+
+.btn-text-info {
+  @extend .btn-text-style;
+  color: $info-color;
+  &:hover {
+    color: white;
+    background-color: $info-color;
+  }
+}
+
+.btn-text-danger {
+  @extend .btn-text-style;
+  color: $error-color;
+  &:hover {
+    color: white;
+    background-color: $error-color;
+  }
+}
+
+.btn-icon-text-style {
+  padding: 5px;
+  border-radius: 50%;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.btn-icon-text-style-primary {
+  @extend .btn-icon-text-style;
+
+}
+
+.btn-icon-text-style-error {
+  @extend .btn-icon-text-style;
+  &:hover {
+    background-color: $error-color;
+    color: white;
+  }
+}
+
+.elevation-1 {
+  box-shadow: 0 2px 10px 0 rgb(94 86 105 / 10%);
+}
+
+.el-dialog-no-padding {
+  background-color: rgba($color: #0D47A1, $alpha: 1);
+  padding: 1px;
+  box-shadow: 0 2px 10px 0 rgb(94 86 105 / 10%);
+
+  .el-dialog__header {
+    padding: 0;
+
+    .el-dialog__headerbtn .el-dialog__close {
+      color: white;
+
+      &:hover {
+        color: #409eff;
+      }
+    }
+  }
+
+  .el-dialog__body {
+    padding: 0;
+  }
+}
